@@ -1,0 +1,185 @@
+{
+  "id": "fir_refusal",
+  "lang": "en",
+  "version": "1.0.0",
+  "title": "Police Refusing to Register FIR",
+  "icon": "shield_alert",
+  "summary_line": "You have the legal right to report a crime. Here is what to do.",
+  "reviewed": false,
+  "reviewed_by": null,
+  "reviewer_role": null,
+  "reviewed_on": null,
+  "do_now": [
+    {
+      "id": "s1",
+      "text": "Submit a written complaint to the police station duty officer.",
+      "audio_key": "fir_refusal_en_s1",
+      "icon": "file_text"
+    },
+    {
+      "id": "s2",
+      "text": "Demand a signed and stamped receiving copy of your complaint.",
+      "audio_key": "fir_refusal_en_s2",
+      "icon": "stamp"
+    },
+    {
+      "id": "s3",
+      "text": "Ask for your free official copy of the registered FIR.",
+      "audio_key": "fir_refusal_en_s3",
+      "icon": "file_check"
+    }
+  ],
+  "who_to_call": [
+    "112",
+    "15100"
+  ],
+  "law": [
+    {
+      "section_id": "BNSS:173",
+      "act": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "section": "173",
+      "heading": "Information in cognizable cases",
+      "quote": "Every information relating to the commission of a cognizable offence, if given orally to an officer in charge of a police station, shall be reduced to writing by him or under his direction, and be read over to the informant; and every such information, whether given in writing or reduced to writing as aforesaid, shall be signed by the person giving it... Provided further that if the information is given orally, it shall be taken down in writing... irrespective of the area where the offence was committed. (2) A copy of the information as recorded under sub-section (1) shall be given forthwith, free of cost, to the informant or the person giving such information.",
+      "plain_line": "Police must record every report of a serious crime and give a free FIR copy immediately, even across jurisdiction (Zero FIR).",
+      "source_url": "https://www.indiacode.nic.in",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "section_id": "BNSS:173_4",
+      "act": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "section": "173(4)",
+      "heading": "Remedy on refusal to record information",
+      "quote": "Any person aggrieved by a refusal on the part of an officer in charge of a police station to record the information referred to in sub-section (1) may send the substance of such information, in writing and by post, to the Superintendent of Police concerned who, if satisfied that such information discloses the commission of a cognizable offence, shall either investigate the case himself or direct an investigation to be made by any police officer subordinate to him.",
+      "plain_line": "If the station officer refuses to register the FIR, send your written complaint by post to the Superintendent of Police.",
+      "source_url": "https://www.indiacode.nic.in",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "section_id": "BNS:198",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "198",
+      "heading": "Public servant disobeying direction under law",
+      "quote": "Whoever, being a public servant... fails to record any information given to him under sub-section (1) of section 173 of the Bharatiya Nagarik Suraksha Sanhita, 2023 in relation to offences punishable under section 64, section 65, section 66... shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to two years, and shall also be liable to fine.",
+      "plain_line": "A police officer who refuses to record information for specified crimes faces rigorous imprisonment under criminal law.",
+      "source_url": "https://www.indiacode.nic.in",
+      "verified_on": "2026-10-09"
+    }
+  ],
+  "avoid": [
+    {
+      "id": "a1",
+      "text": "Do not leave the station without a stamped receiving copy.",
+      "audio_key": "fir_refusal_en_a1"
+    },
+    {
+      "id": "a2",
+      "text": "Do not argue or enter physical conflict with police officers.",
+      "audio_key": "fir_refusal_en_a2"
+    },
+    {
+      "id": "a3",
+      "text": "Do not pay any bribe or money to register an FIR.",
+      "audio_key": "fir_refusal_en_a3"
+    }
+  ],
+  "next": [
+    {
+      "id": "n1",
+      "text": "Send your complaint by registered speed post to the district SP.",
+      "audio_key": "fir_refusal_en_n1"
+    },
+    {
+      "id": "n2",
+      "text": "Approach the Judicial Magistrate if the SP takes no action.",
+      "audio_key": "fir_refusal_en_n2"
+    },
+    {
+      "id": "n3",
+      "text": "Call NALSA on 15100 to request a free government legal aid advocate.",
+      "audio_key": "fir_refusal_en_n3"
+    }
+  ],
+  "evidence": [
+    "Signed and stamped receiving copy of your written complaint",
+    "Speed post dispatch receipt and tracking delivery confirmation to the SP",
+    "Names, ranks, or uniform badge numbers of the police officers spoken to",
+    "Exact date, time, and police station location of your visit",
+    "Photos, medical injury reports, or transaction records proving the crime"
+  ],
+  "triage": {
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Are you in immediate physical danger right now?",
+        "options": [
+          {
+            "id": "opt_danger_yes",
+            "label": "Yes, I am in danger",
+            "icon": "alert_circle",
+            "action": "call_112"
+          },
+          {
+            "id": "opt_danger_no",
+            "label": "No, I am safe now",
+            "icon": "shield_check",
+            "action": "continue"
+          }
+        ]
+      },
+      {
+        "id": "q2",
+        "prompt": "Did the police refuse to take your complaint in writing?",
+        "options": [
+          {
+            "id": "opt_refused",
+            "label": "Yes, police refused it",
+            "icon": "file_x",
+            "highlight_step": "n1"
+          },
+          {
+            "id": "opt_not_submitted",
+            "label": "Haven't submitted yet",
+            "icon": "file_plus",
+            "highlight_step": "s1"
+          }
+        ]
+      },
+      {
+        "id": "q3",
+        "prompt": "Did the crime occur outside this police station's jurisdiction?",
+        "options": [
+          {
+            "id": "opt_jurisdiction_diff",
+            "label": "Yes, happened elsewhere",
+            "icon": "map_pin",
+            "highlight_law": "BNSS:173"
+          },
+          {
+            "id": "opt_jurisdiction_same",
+            "label": "No, happened locally",
+            "icon": "home",
+            "highlight_step": "s2"
+          }
+        ]
+      }
+    ]
+  },
+  "phrases": [
+    "Police are not filing my FIR",
+    "Police refused to take my complaint",
+    "Thanedar is refusing to register case",
+    "How to file Zero FIR",
+    "What to do if police refuse complaint",
+    "Police not giving FIR copy",
+    "How to complain to SP against police"
+  ],
+  "officer_card": {
+    "title": "Legal Provisions on FIR Registration",
+    "law_ids": [
+      "BNSS:173",
+      "BNSS:173_4"
+    ],
+    "plain_line": "Under Section 173 of Bharatiya Nagarik Suraksha Sanhita, 2023, police must register cognizable offence information, provide a free copy immediately, and register Zero FIR irrespective of jurisdiction."
+  },
+  "disclaimer_key": "standard_legal_disclaimer"
+}

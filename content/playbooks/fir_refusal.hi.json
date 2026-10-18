@@ -1,0 +1,184 @@
+{
+  "id": "fir_refusal",
+  "lang": "hi",
+  "version": "1.0.0",
+  "title": "पुलिस एफ़आईआर दर्ज न करे तो क्या करें",
+  "icon": "shield_alert",
+  "summary_line": "आपको अपराध की शिकायत दर्ज कराने का कानूनी अधिकार है। यहाँ जानें क्या करें।",
+  "reviewed": false,
+  "reviewed_by": null,
+  "reviewer_role": null,
+  "reviewed_on": null,
+  "do_now": [
+    {
+      "id": "s1",
+      "text": "थाने के ड्यूटी अधिकारी को अपनी लिखित शिकायत सौंपें।",
+      "audio_key": "fir_refusal_hi_s1",
+      "icon": "file_text"
+    },
+    {
+      "id": "s2",
+      "text": "अपनी शिकायत की प्रति पर मुहर और हस्ताक्षरयुक्त पावती मांगें।",
+      "audio_key": "fir_refusal_hi_s2",
+      "icon": "stamp"
+    },
+    {
+      "id": "s3",
+      "text": "दर्ज एफ़आईआर की अपनी मुफ़्त आधिकारिक प्रति मांगें।",
+      "audio_key": "fir_refusal_hi_s3",
+      "icon": "file_check"
+    }
+  ],
+  "who_to_call": [
+    "112",
+    "15100"
+  ],
+  "law": [
+    {
+      "section_id": "BNSS:173",
+      "act": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "section": "173",
+      "heading": "Information in cognizable cases",
+      "quote": "Every information relating to the commission of a cognizable offence, if given orally to an officer in charge of a police station, shall be reduced to writing by him or under his direction, and be read over to the informant; and every such information, whether given in writing or reduced to writing as aforesaid, shall be signed by the person giving it... Provided further that if the information is given orally, it shall be taken down in writing... irrespective of the area where the offence was committed. (2) A copy of the information as recorded under sub-section (1) shall be given forthwith, free of cost, to the informant or the person giving such information.",
+      "plain_line": "पुलिस को संज्ञेय अपराध की जानकारी दर्ज करनी होगी और आपको तुरंत एफ़आईआर की मुफ़्त प्रति देनी होगी, भले ही अपराध कहीं भी हुआ हो (ज़ीरो एफ़आईआर)।",
+      "source_url": "https://www.indiacode.nic.in",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "section_id": "BNSS:173_4",
+      "act": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "section": "173(4)",
+      "heading": "Remedy on refusal to record information",
+      "quote": "Any person aggrieved by a refusal on the part of an officer in charge of a police station to record the information referred to in sub-section (1) may send the substance of such information, in writing and by post, to the Superintendent of Police concerned who, if satisfied that such information discloses the commission of a cognizable offence, shall either investigate the case himself or direct an investigation to be made by any police officer subordinate to him.",
+      "plain_line": "यदि पुलिस अधिकारी एफ़आईआर दर्ज करने से मना करे, तो आप अपनी लिखित शिकायत डाक द्वारा सीधे पुलिस अधीक्षक (एसपी) को भेज सकते हैं।",
+      "source_url": "https://www.indiacode.nic.in",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "section_id": "BNS:198",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "198",
+      "heading": "Public servant disobeying direction under law",
+      "quote": "Whoever, being a public servant... fails to record any information given to him under sub-section (1) of section 173 of the Bharatiya Nagarik Suraksha Sanhita, 2023 in relation to offences punishable under section 64, section 65, section 66... shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to two years, and shall also be liable to fine.",
+      "plain_line": "निर्दिष्ट अपराधों में एफ़आईआर दर्ज न करने वाले पुलिस अधिकारी को कानून के तहत कठोर कारावास की सजा हो सकती है।",
+      "source_url": "https://www.indiacode.nic.in",
+      "verified_on": "2026-10-09"
+    }
+  ],
+  "avoid": [
+    {
+      "id": "a1",
+      "text": "मुहर लगी पावती प्रति लिए बिना थाने से बाहर न निकलें।",
+      "audio_key": "fir_refusal_hi_a1"
+    },
+    {
+      "id": "a2",
+      "text": "पुलिसकर्मियों से बहस या हाथापाई बिल्कुल न करें।",
+      "audio_key": "fir_refusal_hi_a2"
+    },
+    {
+      "id": "a3",
+      "text": "एफ़आईआर दर्ज कराने के लिए कोई रिश्वत या पैसे न दें।",
+      "audio_key": "fir_refusal_hi_a3"
+    }
+  ],
+  "next": [
+    {
+      "id": "n1",
+      "text": "अपनी शिकायत रजिस्टर्ड स्पीड पोस्ट द्वारा जिला पुलिस अधीक्षक को भेजें।",
+      "audio_key": "fir_refusal_hi_n1"
+    },
+    {
+      "id": "n2",
+      "text": "एसपी द्वारा कार्रवाई न होने पर न्यायिक मजिस्ट्रेट के पास जाएं।",
+      "audio_key": "fir_refusal_hi_n2"
+    },
+    {
+      "id": "n3",
+      "text": "मुफ़्त सरकारी कानूनी सहायता के लिए 15100 पर संपर्क करें।",
+      "audio_key": "fir_refusal_hi_n3"
+    }
+  ],
+  "evidence": [
+    "लिखित शिकायत की मुहर और हस्ताक्षर लगी पावती प्रति",
+    "एसपी को भेजी गई स्पीड पोस्ट की रसीद और डिलीवरी प्रमाण",
+    "थाने में बात किए गए पुलिस अधिकारियों के नाम, पद या बेल्ट नंबर",
+    "थाने जाने की सही तारीख, समय और थाने का नाम",
+    "अपराध से जुड़े फोटो, मेडिकल रिपोर्ट या अन्य दस्तावेजी साक्ष्य"
+  ],
+  "triage": {
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "क्या आप इस समय किसी सीधे शारीरिक खतरे में हैं?",
+        "options": [
+          {
+            "id": "opt_danger_yes",
+            "label": "हाँ, मैं खतरे में हूँ",
+            "icon": "alert_circle",
+            "action": "call_112"
+          },
+          {
+            "id": "opt_danger_no",
+            "label": "नहीं, मैं अभी सुरक्षित हूँ",
+            "icon": "shield_check",
+            "action": "continue"
+          }
+        ]
+      },
+      {
+        "id": "q2",
+        "prompt": "क्या पुलिस ने आपकी लिखित शिकायत लेने से मना कर दिया है?",
+        "options": [
+          {
+            "id": "opt_refused",
+            "label": "हाँ, शिकायत लेने से मना किया",
+            "icon": "file_x",
+            "highlight_step": "n1"
+          },
+          {
+            "id": "opt_not_submitted",
+            "label": "अभी लिखित शिकायत नहीं दी है",
+            "icon": "file_plus",
+            "highlight_step": "s1"
+          }
+        ]
+      },
+      {
+        "id": "q3",
+        "prompt": "क्या अपराध किसी दूसरे क्षेत्र या थाने के दायरे में हुआ था?",
+        "options": [
+          {
+            "id": "opt_jurisdiction_diff",
+            "label": "हाँ, किसी दूसरे इलाके में हुआ था",
+            "icon": "map_pin",
+            "highlight_law": "BNSS:173"
+          },
+          {
+            "id": "opt_jurisdiction_same",
+            "label": "नहीं, इसी स्थानीय इलाके में हुआ था",
+            "icon": "home",
+            "highlight_step": "s2"
+          }
+        ]
+      }
+    ]
+  },
+  "phrases": [
+    "पुलिस एफ़आईआर दर्ज नहीं कर रही है",
+    "थानेदार ने शिकायत लेने से मना कर दिया",
+    "जीरो एफ़आईआर कैसे दर्ज करवाएं",
+    "पुलिस एफ़आईआर की कॉपी नहीं दे रही है",
+    "शिकायत दर्ज न होने पर क्या करें",
+    "एसपी को शिकायत कैसे भेजें"
+  ],
+  "officer_card": {
+    "title": "एफ़आईआर पंजीकरण संबंधी कानूनी प्रावधान",
+    "law_ids": [
+      "BNSS:173",
+      "BNSS:173_4"
+    ],
+    "plain_line": "भारतीय नागरिक सुरक्षा संहिता, 2023 की धारा 173 के तहत पुलिस को संज्ञेय अपराध की सूचना दर्ज करना, तुरंत मुफ़्त प्रति देना और अधिकार क्षेत्र के बाहर भी ज़ीरो एफ़आईआर दर्ज करना अनिवार्य है।"
+  },
+  "disclaimer_key": "standard_legal_disclaimer"
+}

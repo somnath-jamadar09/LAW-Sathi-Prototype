@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>LawSathi — Legal Emergency Companion</title>
+  <meta name="description" content="Voice-first, offline-capable citizen legal aid. Know your rights instantly with verified law sections.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#dc2626">
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- Pinned Emergency 112 Bar -->
+    <header class="emergency-bar" id="emergencyBar">
+      <div class="emergency-text">
+        <span class="pulse-dot"></span>
+        <strong>Immediate Danger?</strong>
+      </div>
+      <a href="tel:112" class="call-112-btn" id="call112Btn">📞 Call 112</a>
+    </header>
+
+    <!-- Language Selector & Network Status -->
+    <div class="top-nav">
+      <div class="offline-indicator" id="offlineIndicator">
+        ⚡ Offline Mode — Cached Content Active
+      </div>
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="en" id="langEn">English</button>
+        <button class="lang-btn" data-lang="hi" id="langHi">हिंदी</button>
+        <button class="lang-btn" data-lang="mr" id="langMr">मराठी</button>
+      </div>
+    </div>
+
+    <!-- MAIN VIEWS -->
+    <main id="mainContent">
+
+      <!-- ░░ 1. HOME VIEW ░░ -->
+      <section id="viewHome" class="view-section active">
+        <div class="hero-voice">
+          <div class="brand-mark">
+            <span class="brand-icon">⚖️</span>
+            <div>
+              <h1 class="brand-name">LawSathi</h1>
+              <p class="brand-tagline">Your legal rights. Instantly. In your language.</p>
+            </div>
+          </div>
+
+          <button id="micBtn" class="big-mic-btn" aria-label="Speak your legal problem">
+            <span class="mic-icon">🎙️</span>
+            <span id="micLabel">Tap to Speak</span>
+          </button>
+
+          <div class="search-box">
+            <input type="text" id="queryInput" placeholder="e.g. Police refusing to file my FIR…" autocomplete="off">
+            <button id="askBtn" class="ask-btn">Ask</button>
+          </div>
+        </div>
+
+        <h2 class="section-title">Emergency Situations</h2>
+        <div class="situation-grid">
+          <div class="situation-card" data-id="fir_refusal" id="cardFirRefusal" tabindex="0">
+            <span class="card-icon">🛡️</span>
+            <h3>Police Refusing FIR</h3>
+            <p>Section 173 BNSS & Zero FIR rights</p>
+          </div>
+          <div class="situation-card" data-id="train_harassment" id="cardTrainHarassment" tabindex="0">
+            <span class="card-icon">🚆</span>
+            <h3>Train Harassment</h3>
+            <p>Immediate steps on moving train & 139</p>
+          </div>
+          <div class="situation-card" data-id="cyber_fraud" id="cardCyberFraud" tabindex="0">
+            <span class="card-icon">💳</span>
+            <h3>Cyber / UPI Scam</h3>
+            <p>Freeze account within 10 mins (1930)</p>
+          </div>
+          <div class="situation-card" data-id="arrest_rights" id="cardArrestRights" tabindex="0">
+            <span class="card-icon">⚖️</span>
+            <h3>Arrest & Detention</h3>
+            <p>Notice, arrest memo & 24‑hour rule</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ░░ 2. PLAYBOOK VIEW ░░ -->
+      <section id="viewPlaybook" class="view-section">
+        <button class="back-btn" id="playbookBackBtn">← Back to Situations</button>
+
+        <div class="playbook-header">
+          <div id="playbookBadge" class="tier-badge verified">✅ Verified Playbook</div>
+          <h2 id="playbookTitle">Loading Playbook…</h2>
+          <p id="playbookSummary" class="summary-line"></p>
+        </div>
+
+        <div class="audio-control-bar">
+          <button id="playAllAudioBtn" class="action-btn" aria-label="Listen to instructions">
+            🔊 Listen to Instructions
+          </button>
+        </div>
+
+        <!-- What to Do Right Now -->
+        <div class="playbook-section">
+          <h3 class="playbook-section-title">⚡ What to Do Right Now</h3>
+          <div id="doNowList" class="steps-container"></div>
+        </div>
+
+        <!-- What to Avoid -->
+        <div class="playbook-section" id="avoidSection">
+          <h3 class="playbook-section-title">🚫 What to Avoid</h3>
+          <div id="avoidList" class="steps-container avoid-steps"></div>
+        </div>
+
+        <!-- Emergency Numbers -->
+        <div class="playbook-section">
+          <h3 class="playbook-section-title">📞 Emergency Numbers</h3>
+          <div id="whoToCallList" class="helplines-container"></div>
+        </div>
+
+        <!-- What the Law Says -->
+        <div class="playbook-section">
+          <h3 class="playbook-section-title">📖 What the Law Says</h3>
+          <div id="lawCardsList" class="law-cards-container"></div>
+        </div>
+
+        <!-- Next Steps -->
+        <div class="playbook-section" id="nextSection">
+          <h3 class="playbook-section-title">🔜 If They Still Refuse</h3>
+          <div id="nextList" class="steps-container"></div>
+        </div>
+
+        <!-- Sticky Show to Officer Button -->
+        <div class="sticky-footer">
+          <button id="showOfficerBtn" class="officer-trigger-btn">
+            👮 Show This to the Police Officer
+          </button>
+        </div>
+      </section>
+
+      <!-- ░░ 3. OFFICER CARD FULLSCREEN VIEW ░░ -->
+      <section id="viewOfficer" class="view-section officer-card-mode">
+        <button class="close-officer-btn" id="closeOfficerBtn">✕ Close Officer Card</button>
+        <div class="officer-card-content">
+          <div class="officer-header">
+            <span class="emblem-tag">OFFICIAL LEGAL STATUTE NOTICE</span>
+            <h1 id="officerActTitle">Bharatiya Nagarik Suraksha Sanhita, 2023</h1>
+            <h2 id="officerSection">Section 173 &amp; 173(4)</h2>
+          </div>
+          <div class="officer-quote-box">
+            <p id="officerVerbatimQuote">
+              "Every information relating to the commission of a cognizable offence… shall be reduced to writing… and a copy shall be given forthwith, free of cost, to the informant."
+            </p>
+          </div>
+          <div class="officer-plain-box">
+            <strong>Mandatory Legal Procedure:</strong>
+            <p id="officerPlainLine">
+              Police officers are legally mandated to register a Zero FIR for cognizable offences regardless of jurisdiction.
+            </p>
+          </div>
+          <div class="officer-warning-box">
+            <strong>⚠️ Consequences of Refusal:</strong>
+            <p id="officerConsequences">Refusal to register an FIR is a criminal offence punishable under BNS Section 198 with imprisonment.</p>
+          </div>
+          <div class="officer-footer">
+            <p>LawSathi Citizen Protection Interface · Sourced from official Government Gazette · indiacode.nic.in</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ░░ 4. ASK Q&A RESULT VIEW ░░ -->
+      <section id="viewAskResult" class="view-section">
+        <button class="back-btn" id="askBackBtn">← Back</button>
+        <div id="askBadge" class="tier-badge"></div>
+
+        <div class="qa-container">
+          <div class="user-q-display">
+            <strong>Your Question:</strong>
+            <p id="qaQuestionText"></p>
+          </div>
+
+          <div id="qaLoadingState" class="loading-state">
+            <div class="spinner"></div>
+            <p>Analyzing against official statute corpus…</p>
+          </div>
+
+          <div id="qaQuotesContainer"></div>
+
+          <div class="qa-summary-box">
+            <strong>LawSathi Plain Guidance:</strong>
+            <p id="qaSummaryText"></p>
+          </div>
+
+          <div class="qa-actions">
+            <a href="tel:112" class="call-112-btn" id="qaCall112">📞 Call 112 Helpline</a>
+            <a href="tel:15100" class="call-nalsa-btn" id="qaCallNalsa">📞 NALSA 15100</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="app-footer">
+      <p>⚖️ Answers derived strictly from the official text of the law. Not a substitute for a legal advocate.</p>
+    </footer>
+  </div>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>

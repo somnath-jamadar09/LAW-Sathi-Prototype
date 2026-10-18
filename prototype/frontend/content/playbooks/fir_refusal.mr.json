@@ -1,0 +1,184 @@
+{
+  "id": "fir_refusal",
+  "lang": "mr",
+  "version": "1.0.0",
+  "title": "पोलिसांनी एफआयआर नोंदवण्यास नकार दिल्यास काय करावे",
+  "icon": "shield_alert",
+  "summary_line": "गुन्ह्याची तक्रार नोंदवण्याचा तुम्हाला कायदेशीर अधिकार आहे. पुढे काय करावे ते पाहा.",
+  "reviewed": false,
+  "reviewed_by": null,
+  "reviewer_role": null,
+  "reviewed_on": null,
+  "do_now": [
+    {
+      "id": "s1",
+      "text": "पोलीस ठाण्यातील कर्तव्य अधिकाऱ्याकडे लेखी तक्रार सादर करा.",
+      "audio_key": "fir_refusal_mr_s1",
+      "icon": "file_text"
+    },
+    {
+      "id": "s2",
+      "text": "आपल्या तक्रार प्रतीवर स्वाक्षरी व शिक्का असलेली पावती मागा.",
+      "audio_key": "fir_refusal_mr_s2",
+      "icon": "stamp"
+    },
+    {
+      "id": "s3",
+      "text": "नोंदवलेल्या एफआयआरची आपली अधिकृत मोफत प्रत मागा.",
+      "audio_key": "fir_refusal_mr_s3",
+      "icon": "file_check"
+    }
+  ],
+  "who_to_call": [
+    "112",
+    "15100"
+  ],
+  "law": [
+    {
+      "section_id": "BNSS:173",
+      "act": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "section": "173",
+      "heading": "Information in cognizable cases",
+      "quote": "Every information relating to the commission of a cognizable offence, if given orally to an officer in charge of a police station, shall be reduced to writing by him or under his direction, and be read over to the informant; and every such information, whether given in writing or reduced to writing as aforesaid, shall be signed by the person giving it... Provided further that if the information is given orally, it shall be taken down in writing... irrespective of the area where the offence was committed. (2) A copy of the information as recorded under sub-section (1) shall be given forthwith, free of cost, to the informant or the person giving such information.",
+      "plain_line": "पोलिसांनी दखलपात्र गुन्ह्याची माहिती नोंदवून घेणे आणि तात्काळ मोफत एफआयआर प्रत देणे बंधनकारक आहे, मग गुन्हा कुठेही घडलेला असो (झिरो एफआयआर).",
+      "source_url": "https://www.indiacode.nic.in",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "section_id": "BNSS:173_4",
+      "act": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "section": "173(4)",
+      "heading": "Remedy on refusal to record information",
+      "quote": "Any person aggrieved by a refusal on the part of an officer in charge of a police station to record the information referred to in sub-section (1) may send the substance of such information, in writing and by post, to the Superintendent of Police concerned who, if satisfied that such information discloses the commission of a cognizable offence, shall either investigate the case himself or direct an investigation to be made by any police officer subordinate to him.",
+      "plain_line": "पोलीस अधिकाऱ्याने एफआयआर नोंदवण्यास नकार दिल्यास, तुम्ही तुमची लेखी तक्रार पोस्टाने थेट पोलीस अधीक्षकांकडे (एसपी) पाठवू शकता.",
+      "source_url": "https://www.indiacode.nic.in",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "section_id": "BNS:198",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "198",
+      "heading": "Public servant disobeying direction under law",
+      "quote": "Whoever, being a public servant... fails to record any information given to him under sub-section (1) of section 173 of the Bharatiya Nagarik Suraksha Sanhita, 2023 in relation to offences punishable under section 64, section 65, section 66... shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to two years, and shall also be liable to fine.",
+      "plain_line": "विशिष्ट गुन्ह्यांमध्ये एफआयआर नोंदवण्यात अपयशी ठरणाऱ्या पोलीस अधिकाऱ्यास कायद्यानुसार सश्रम कारावासाची शिक्षा होऊ शकते.",
+      "source_url": "https://www.indiacode.nic.in",
+      "verified_on": "2026-10-09"
+    }
+  ],
+  "avoid": [
+    {
+      "id": "a1",
+      "text": "शिक्का असलेली पावती घेतल्याशिवाय पोलीस ठाण्यातून बाहेर पडू नका.",
+      "audio_key": "fir_refusal_mr_a1"
+    },
+    {
+      "id": "a2",
+      "text": "पोलीस अधिकाऱ्यांशी वाद घालू नका किंवा शारीरिक संघर्ष करू नका.",
+      "audio_key": "fir_refusal_mr_a2"
+    },
+    {
+      "id": "a3",
+      "text": "एफआयआर नोंदवण्यासाठी कोणतीही लाच किंवा पैसे देऊ नका.",
+      "audio_key": "fir_refusal_mr_a3"
+    }
+  ],
+  "next": [
+    {
+      "id": "n1",
+      "text": "आपली तक्रार स्पीड पोस्टाने थेट जिल्हा पोलीस अधीक्षकांकडे पाठवा.",
+      "audio_key": "fir_refusal_mr_n1"
+    },
+    {
+      "id": "n2",
+      "text": "पोलीस अधीक्षकांनी दखल न घेतल्यास दंडाधिकाऱ्यांकडे अर्ज दाखल करा.",
+      "audio_key": "fir_refusal_mr_n2"
+    },
+    {
+      "id": "n3",
+      "text": "मोफत कायदेशीर मदतीसाठी 15100 क्रमांकावर नालसाशी संपर्क साधा.",
+      "audio_key": "fir_refusal_mr_n3"
+    }
+  ],
+  "evidence": [
+    "स्वाक्षरी व शिक्का असलेली लेखी तक्रारीची पावती प्रत",
+    "पोलीस अधीक्षकांना पाठवलेल्या स्पीड पोस्टाची पावती व वितरण ट्रॅकिंग पुरावा",
+    "बोलणी झालेल्या पोलीस कर्मचाऱ्यांची नावे, पदनाम किंवा बॅज क्रमांक",
+    "पोलीस ठाण्यास दिलेल्या भेटीची अचूक तारीख, वेळ व पोलीस ठाण्याचे ठिकाण",
+    "गुन्हा सिद्ध करणारी छायाचित्रे, वैद्यकीय अहवाल किंवा संबंधित कागदपत्रे"
+  ],
+  "triage": {
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "तुम्ही सध्या तत्काळ शारीरिक धोक्यात आहात का?",
+        "options": [
+          {
+            "id": "opt_danger_yes",
+            "label": "होय, मी धोक्यात आहे",
+            "icon": "alert_circle",
+            "action": "call_112"
+          },
+          {
+            "id": "opt_danger_no",
+            "label": "नाही, मी आता सुरक्षित आहे",
+            "icon": "shield_check",
+            "action": "continue"
+          }
+        ]
+      },
+      {
+        "id": "q2",
+        "prompt": "पोलिसांनी तुमची लेखी तक्रार स्वीकारण्यास नकार दिला का?",
+        "options": [
+          {
+            "id": "opt_refused",
+            "label": "होय, तक्रार घेण्यास नकार दिला",
+            "icon": "file_x",
+            "highlight_step": "n1"
+          },
+          {
+            "id": "opt_not_submitted",
+            "label": "अजून लेखी दिलेली नाही",
+            "icon": "file_plus",
+            "highlight_step": "s1"
+          }
+        ]
+      },
+      {
+        "id": "q3",
+        "prompt": "गुन्हा या पोलीस ठाण्याच्या हद्दीबाहेर घडला आहे का?",
+        "options": [
+          {
+            "id": "opt_jurisdiction_diff",
+            "label": "होय, दुसऱ्या भागात घडला",
+            "icon": "map_pin",
+            "highlight_law": "BNSS:173"
+          },
+          {
+            "id": "opt_jurisdiction_same",
+            "label": "नाही, याच स्थानिक भागात घडला",
+            "icon": "home",
+            "highlight_step": "s2"
+          }
+        ]
+      }
+    ]
+  },
+  "phrases": [
+    "पोलीस एफआयआर नोंदवून घेत नाहीत",
+    "पोलिसांनी तक्रार घेण्यास नकार दिला",
+    "झिरो एफआयआर कशी नोंदवावी",
+    "एफआयआरची प्रत मोफत कशी मिळवावी",
+    "तक्रार न घेतल्यास काय करावे",
+    "पोलीस अधीक्षकांकडे तक्रार कशी पाठवावी"
+  ],
+  "officer_card": {
+    "title": "एफआयआर नोंदणीबाबत कायदेशीर तरतुदी",
+    "law_ids": [
+      "BNSS:173",
+      "BNSS:173_4"
+    ],
+    "plain_line": "भारतीय नागरिक सुरक्षा संहिता, 2023 च्या कलम 173 अन्वये पोलिसांना दखलपात्र गुन्ह्याची नोंद करणे, त्वरित मोफत प्रत देणे आणि हद्दीबाहेरही झिरो एफआयआर नोंदवणे कायद्याने बंधनकारक आहे."
+  },
+  "disclaimer_key": "standard_legal_disclaimer"
+}

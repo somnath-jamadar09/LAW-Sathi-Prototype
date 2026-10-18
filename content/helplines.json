@@ -1,0 +1,95 @@
+{
+  "version": "2026-10-09",
+  "items": [
+    {
+      "id": "112",
+      "name": {
+        "en": "National Emergency Helpline",
+        "hi": "राष्ट्रीय आपातकालीन हेल्पलाइन",
+        "mr": "राष्ट्रीय आणीबाणी हेल्पलाइन"
+      },
+      "number": "112",
+      "hours": "24x7",
+      "purpose": {
+        "en": "All-in-one emergency response for police, medical, and fire",
+        "hi": "पुलिस, चिकित्सा और अग्निशमन के लिए एकल आपातकालीन सेवा",
+        "mr": "पोलीस, वैद्यकीय आणि अग्निशमन दलासाठी सर्वसमावेशक आणीबाणी मदत"
+      },
+      "source_url": "https://112.gov.in",
+      "verified_on": "2026-10-09",
+      "status": "verified"
+    },
+    {
+      "id": "15100",
+      "name": {
+        "en": "NALSA Legal Aid Helpline",
+        "hi": "नालसा निःशुल्क कानूनी सहायता हेल्पलाइन",
+        "mr": "नालसा मोफत कायदेशीर मदत हेल्पलाइन"
+      },
+      "number": "15100",
+      "hours": "Official working hours",
+      "purpose": {
+        "en": "Free legal aid consultation and advocate assignment for eligible citizens",
+        "hi": "पात्र नागरिकों के लिए निःशुल्क कानूनी सहायता और वकील सहायता",
+        "mr": "पात्र नागरिकांसाठी मोफत कायदेशीर सल्ला आणि वकील साहाय्य"
+      },
+      "source_url": "https://nalsa.gov.in",
+      "verified_on": "2026-10-09",
+      "status": "conflicting"
+    },
+    {
+      "id": "1930",
+      "name": {
+        "en": "National Cyber Crime Helpline",
+        "hi": "राष्ट्रीय साइबर अपराध हेल्पलाइन",
+        "mr": "राष्ट्रीय सायबर गुन्हे हेल्पलाइन"
+      },
+      "number": "1930",
+      "hours": "24x7",
+      "purpose": {
+        "en": "Immediate reporting and freezing of unauthorized financial cyber fraud",
+        "hi": "अनधिकृत वित्तीय साइबर धोखाधड़ी की तत्काल रिपोर्टिंग और लेन-देन रोक",
+        "mr": "अनधिकृत आर्थिक सायबर फसवणुकीची तात्काळ तक्रार आणि खाती गोठवणे"
+      },
+      "source_url": "https://cybercrime.gov.in",
+      "verified_on": "2026-10-09",
+      "status": "verified"
+    },
+    {
+      "id": "181",
+      "name": {
+        "en": "Women Helpline",
+        "hi": "महिला हेल्पलाइन",
+        "mr": "महिला हेल्पलाइन"
+      },
+      "number": "181",
+      "hours": "24x7",
+      "purpose": {
+        "en": "Support, shelter, and emergency assistance for women in distress",
+        "hi": "संकटग्रस्त महिलाओं के लिए सहायता, आश्रय और आपातकालीन मार्गदर्शन",
+        "mr": "संकटात सापडलेल्या महिलांसाठी साहाय्य, निवारा आणि आणीबाणी मार्गदर्शन"
+      },
+      "source_url": "https://ncw.nic.in",
+      "verified_on": "2026-10-09",
+      "status": "verified"
+    },
+    {
+      "id": "139",
+      "name": {
+        "en": "Railways Passenger Helpline (RailMadad)",
+        "hi": "रेलवे यात्री हेल्पलाइन (रेलमदद)",
+        "mr": "रेल्वे प्रवासी हेल्पलाइन (रेलमदत)"
+      },
+      "number": "139",
+      "hours": "24x7",
+      "purpose": {
+        "en": "Security, medical aid, and emergency assistance on trains and stations",
+        "hi": "ट्रेन और स्टेशनों पर सुरक्षा, चिकित्सा और आपातकालीन सहायता",
+        "mr": "रेल्वे आणि स्थानकांवर सुरक्षा, वैद्यकीय आणि आणीबाणी मदत"
+      },
+      "source_url": "https://railmadad.indianrailways.gov.in",
+      "verified_on": "2026-10-09",
+      "status": "verified"
+    }
+  ]
+}
